@@ -1,0 +1,23 @@
+
+
+
+plugins {
+    id "net.ltgt.apt" version "0.9"
+    id "java"
+    id "idea"
+}
+
+
+group 'com.flipkart'
+version '1.0-SNAPSHOT'
+
+
+sourceCompatibility=1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+apply from: "$rootDir/gradle/dependencies.gradle"
+apply from: "$rootDir/gradle/distributions.gradle"

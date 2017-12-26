@@ -1,0 +1,14 @@
+sourceSets{
+    main.java.srcDir "src/main"
+    test.java.srcDir "src/test"
+}
+
+/*
+
+jar{
+    from configurations.compile.collect {zipTree it}
+    manifest.attributes(
+            "Main-Class": _mainClass,
+            "Built-by": _builtBy
+    )
+}*/

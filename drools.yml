@@ -1,0 +1,19 @@
+server:
+  registerDefaultExceptionMappers: false
+  applicationContextPath: /drools/v1/
+  adminContextPath: /
+  applicationConnectors:
+    - type: http
+      port: 9092
+  adminConnectors:
+    - type: http
+      port: 9093
+  requestLog:
+    timeZone: IST
+  gzip:
+    bufferSize: 100KiB
+  maxThreads: 1024
+  allowedMethods:
+    - GET
+    - PUT
+    - POST
